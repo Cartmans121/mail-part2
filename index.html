@@ -1,0 +1,787 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Рассылка</title>
+    <style type="text/css">
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Arial"] {
+            font-family: "Arial", Helvetica, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        table a {
+            text-decoration: none;
+        }
+
+        .header-td {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .phone a {
+            color: #4192ff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .banner {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 37, 91, 1) 35%, rgba(0, 142, 203, 1) 100%);
+        }
+
+        .banner-img {
+
+            padding-left: 105px;
+        }
+
+        .banner-td {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            background-image: url('https://e.radikal.host/2024/02/16/banner-bg.png');
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+
+        .banner-text {
+            vertical-align: top;
+        }
+
+        .banner-text h1 {
+            padding-bottom: 14px;
+            color: #ffffff;
+            margin: 0;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 34px;
+        }
+
+        .banner-text p {
+            padding-bottom: 24px;
+            line-height: 24px;
+            color: #ffffff;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .banner-text .btn {
+            font-weight: bold;
+            color: #004184;
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: 132px;
+            text-align: center;
+        }
+
+        .mrt {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .mrt-td {
+            display: block;
+        }
+
+        .mrt-text h2 {
+            margin: 0;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: auto;
+            font-size: 22px;
+            padding-bottom: 12px;
+        }
+
+        .mrt-text p {
+            font-size: 16px;
+            margin: 0;
+            line-height: 22px;
+            color: #ffffff;
+            padding-bottom: 20px;
+        }
+
+        .mrt-td .btn-price {
+            background-image: url('https://e.radikal.host/2024/02/16/wrapper.png');
+            background-repeat: no-repeat;
+        }
+
+        .btn-price {
+
+            height: 42px;
+            display: inline-block;
+            width: 157px;
+            color: #004184;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .btn-price td {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .mrt-inline {
+            display: inline;
+            width: 310px;
+        }
+
+        .mrt-img {
+            background-image: url('https://e.radikal.host/2024/02/16/scheme.png');
+            background-repeat: no-repeat;
+            display: inline-block;
+            padding-bottom: 58px;
+        }
+
+        .mrt-box-515 {
+            width: 515px;
+            display: block;
+            background-color: #0ca8ef;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hurt-td td {
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .hurt-block {
+            margin-right: 25px;
+            padding-top: 35px;
+            padding-left: 20px;
+            border-radius: 10px;
+        }
+
+        .hurt-img {
+            background-image: url('https://e.radikal.host/2024/02/16/hurt-bg.png');
+            background-repeat: no-repeat;
+        }
+
+        .hurt-block {
+            height: 225px;
+        }
+
+        .hurt-block h2 {
+            margin: 0;
+            color: #004184;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 20px;
+            padding-bottom: 20px;
+        }
+
+        .hurt-block p {
+            color: #004184;
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+
+        .hurt-block .btn-price td {
+            padding: 0;
+
+        }
+
+        .hurt-block td.price {
+            padding-left: 10px;
+        }
+
+        .hurt-td {
+            display: block;
+            padding-bottom: 25px;
+        }
+
+        .cause-td {
+            display: block;
+            border-radius: 10px;
+        }
+
+        .cause-img {
+            background-image: url('https://e.radikal.host/2024/02/16/doc-bg.png');
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .cause-text .btn-price {
+            background-image: url('https://e.radikal.host/2024/02/16/wrapper.png');
+            background-repeat: no-repeat;
+        }
+
+        .cause-text h2 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 26px;
+            line-height: 30px;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        .cause-text p {
+            margin: 0;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 22px;
+            padding-bottom: 22px;
+        }
+
+        .offset {
+            padding-bottom: 20px;
+        }
+
+        .consult-td {
+            display: block;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            border-radius: 20px;
+        }
+
+        .consult-td p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 22px;
+            color: #4a4a4a;
+            font-size: 16px;
+            line-height: 22px;
+            padding-bottom: 20px;
+        }
+
+        .consult-td a {
+            color: #4192ff;
+        }
+
+        .consult-left {
+            width: 320px;
+            padding-right: 44px;
+        }
+
+        .footer {
+            padding: 20px;
+        }
+
+        .footer-td p {
+            font-size: 16px;
+            color: #4a4a4a;
+            margin: 0;
+        }
+
+        .footer-td a {
+            color: #4192ff;
+            font-size: 16px;
+        }
+
+        .footer h3 {
+            text-transform: uppercase;
+            color: #aeaeae;
+            margin: 0;
+            font-weight: normal;
+            font-size: 13px;
+        }
+
+        @media (max-width:620px) {
+            .table-600 {
+                width: 320px !important;
+            }
+
+            .table-550 {
+                width: 240px !important;
+            }
+
+            .header-td td {
+                text-align: center;
+                display: block;
+            }
+
+            .header-td .phone {
+                padding-top: 15px;
+            }
+
+            .banner-td td {
+                display: block;
+            }
+
+            .mrt-text h2 {
+                font-size: 18px;
+            }
+
+            .mrt-text p {
+                font-size: 14px;
+            }
+
+            td.banner-text {
+                padding-left: 20px;
+                padding-top: 100px;
+            }
+
+            .banner-text h1 {
+                font-size: 24px;
+            }
+
+            .mrt-td td {
+                display: inline-block !important;
+            }
+
+            .mrt-box-515 {
+                width: 220px !important;
+            }
+
+            .mrt-inline {
+                display: block;
+                padding-top: 25px;
+                width: inherit;
+            }
+
+            .hurt-block {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .cause-td td {
+                display: inline-block !important;
+
+            }
+
+            .cause-text {
+                width: 240px !important;
+                padding-top: 20px;
+                padding-left: 10px;
+                padding-bottom: 20px;
+            }
+
+            .consult-td {
+                padding-left: 15px;
+                padding-right: 0;
+            }
+
+            .consult-td td {
+                display: inline-block !important;
+            }
+
+            .consult-left {
+                padding-right: 0;
+                width: 240px !important;
+            }
+
+            .consult-td p {
+                font-size: 14px;
+            }
+
+            .consult-socials td {
+                display: block !important;
+            }
+
+            .hurt-block {
+                padding-left: 10px;
+            }
+
+            .cause-text h2 {
+                font-size: 20px;
+            }
+
+            .cause-text p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:340px) {
+            .table-600 {
+                width: 270px !important;
+            }
+
+            .table-550 {
+                width: 205px !important;
+            }
+
+            .mrt-box-515 {
+                width: 175px !important;
+            }
+
+            .cause-text {
+                width: 180px !important;
+            }
+
+            .consult-left {
+                width: 170px !important;
+            }
+
+            .hurt-block {
+                width: 205px !important;
+            }
+
+            .hurt-img img {
+                height: 215px;
+            }
+
+        }
+    </style>
+</head>
+
+<body style="margin: 0;padding: 0;">
+    <div style="font-size: 0;font-color:#ffffff;opacity: 0;visibility: hidden;width: 0;height: 0;display: none;">
+        Пример акционной рассылки
+    </div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#a7a7a7">
+        <tr>
+            <td>
+                <table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr>
+                        <td height="30" width="600"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" class="header-td">
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="table-550" cellpadding="0" cellspacing="0" width="550" align="center">
+                                    <tr>
+                                        <td align="left" class="logo">
+                                            <a href="https://msk.mrtexpert.ru/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <img src="https://e.radikal.host/2024/02/15/logo.png" width="251"
+                                                    height="36" alt="Main Logo" />
+                                            </a>
+                                        </td>
+                                        <td align="right" class="phone">
+                                            <a href="https://msk.mrtexpert.ru/" target="_blank"
+                                                rel="noopener noreferrer"
+                                                style="font-family: Arial, Helvetica, sans-serif;">+7 (4722)
+                                                42-94-57</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="banner" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td>
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="banner-td table-600" cellpadding="0" cellspacing="0" width="600"
+                                    align="center">
+                                    <tr>
+                                        <td align="left" class="banner-img"
+                                            style="display: inline-block;padding-left: 105px;">
+                                            <a href="https://radikal.host/i/cHwrEQ" rel="noopener noreferrer"><img
+                                                    style="mix-blend-mode:plus-lighter"
+                                                    src="https://e.radikal.host/2024/02/16/banner-man.png"
+                                                    alt="banner-man.png" border="0" /></a>
+                                        </td>
+                                        <td align="left" class="banner-text"
+                                            style="font-family: Arial, Helvetica, sans-serif;">
+                                            <h1>МРТ-исследования <br /> со скидкой</h1>
+                                            <p>Скидка 15% на единичные <br /> МРТ-исследования <br /> ежедневно после
+                                                20:00
+                                            </p>
+                                            <div class="btn">Записаться</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table bgcolor="#ffffff" class="mrt table-600" cellpadding="0" cellspacing="0" width="600"
+                    align="center">
+                    <tr>
+                        <td>
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="mrt-td table-550" cellpadding="0" cellspacing="0" width="550"
+                                    align="center">
+                                    <tr>
+                                        <td>
+                                            <table width="310" cellpadding="0" cellspacing="0"
+                                                class="mrt-text mrt-inline" align="left"
+                                                style="font-family: Arial, Helvetica, sans-serif;display: inline;">
+                                                <tr>
+                                                    <td bgcolor="#0ca8ef" class="mrt-box-515" width="515">
+                                                        <h2>МРТ малого таза</h2>
+                                                        <p>
+                                                            Запишитесь в октябре на МРТ- <br />
+                                                            исследование органов малого таза <br />
+                                                            (мужской и женский) по выгодной цене.
+                                                        </p>
+                                                        <table class="btn-price" cellpadding="0" cellspacing="0"
+                                                            width="157" align="center"
+                                                            style="font-family: Arial, Helvetica, sans-serif;display: inline-block;">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="https://radikal.host/i/cHPMDh"
+                                                                        rel="noopener noreferrer"><img
+                                                                            src="https://e.radikal.host/2024/02/16/wallet.png"
+                                                                            alt="wallet.png" border="0" /></a>
+                                                                </td>
+                                                                <td>
+                                                                    <span>за 4 185 &#8381;</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="mrt-img" align="right" width="260" height="230">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="hurt table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff"
+                    align="center">
+                    <tr>
+                        <td>
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="hurt-td table-550" cellpadding="0" cellspacing="0" width="559"
+                                    bgcolor="#ffffff" align="center">
+                                    <tr>
+                                        <td bgcolor="#b6e8ff" class="hurt-block" width="244" height="225"
+                                            style="font-family: Arial, Helvetica, sans-serif;">
+                                            <h2>Почему болит <br /> голова?</h2>
+                                            <p>Запишитесь на МРТ- <br /> исследование головного <br /> мозга и
+                                                артериографию
+                                                <br /> по выгодной цене
+                                            </p>
+                                            <table class="btn-price" cellpadding="0" cellspacing="0" width="157"
+                                                align="left"
+                                                style="font-family: Arial, Helvetica, sans-serif;display: block;">
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://radikal.host/i/cHPMDh"
+                                                            rel="noopener noreferrer"><img
+                                                                src="https://e.radikal.host/2024/02/16/wallet.png"
+                                                                alt="wallet.png" border="0" /></a>
+                                                    </td>
+                                                    <td class="price">
+                                                        <span>за 5 450 &#8381;</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="hurt-img">
+                                            <a href="https://radikal.host/i/cHS9ez" rel="noopener noreferrer"><img
+                                                    width="264" height="264"
+                                                    src="https://e.radikal.host/2024/02/16/hurt.png" alt="hurt-bg.png"
+                                                    border="0" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="cause table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff"
+                    align="center">
+                    <tr>
+                        <td class="offset" style="padding-bottom: 20px;">
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="cause-td table-550" cellpadding="0" cellspacing="0" width="550"
+                                    align="center" style="background: rgb(0,176,255);
+                            background: linear-gradient(90deg, rgba(0,176,255,1) 0%, rgba(0,47,119,1) 100%);">
+                                    <tr>
+                                        <td class="cause-img width-246" width="246" height="214">
+                                        </td>
+                                        <td class="cause-text" align="left" width="350"
+                                            style="font-family: Arial, Helvetica, sans-serif;">
+                                            <h2>Почему <br />
+                                                болит спина?</h2>
+                                            <p>В исследование входят 3 отдела: <br /> шейный, грудной,
+                                                пояснично-крестцовый.
+                                            </p>
+                                            <table class="btn-price" cellpadding="0" cellspacing="0" width="157"
+                                                align="left"
+                                                style="font-family: Arial, Helvetica, sans-serif;display: block;">
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://radikal.host/i/cHPMDh"
+                                                            rel="noopener noreferrer"><img
+                                                                src="https://e.radikal.host/2024/02/16/wallet.png"
+                                                                alt="wallet.png" border="0" /></a>
+                                                    </td>
+                                                    <td class="price">
+                                                        <span>за 6 490 &#8381;</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="consult table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff"
+                    align="center">
+                    <tr>
+                        <td class="offset" style="padding-bottom: 20px;">
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="consult-td table-550" cellpadding="0" cellspacing="0" width="550"
+                                    bgcolor="#d4efff" align="center">
+                                    <tr>
+                                        <td class="consult-left" align="left"
+                                            style="font-family: Arial, Helvetica, sans-serif;">
+                                            <p>
+                                                Эксперты онлайн: пройдите консультацию <a
+                                                    href="https://msk.mrtexpert.ru/" target="_blank">на сайте</a> или в
+                                                приложении Telemedex.
+                                            </p>
+                                            <table class="consult-socials" cellpadding="0" cellspacing="0" align="left">
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://radikal.host/i/cHv0v4"
+                                                            rel="noopener noreferrer"><img width="117" height="69"
+                                                                src="https://e.radikal.host/2024/02/16/googleplay.png"
+                                                                alt="soc-app.png" border="0" /></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://radikal.host/i/cHvNs1"
+                                                            rel="noopener noreferrer"><img width="117" height="53"
+                                                                src="https://e.radikal.host/2024/02/16/appstore.png"
+                                                                alt="soc-store.png" border="0" /></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="right">
+                                            <a href="https://radikal.host/i/cHvsWA" rel="noopener noreferrer"><img
+                                                    width="110" height="99"
+                                                    src="https://e.radikal.host/2024/02/16/logo-footer.png"
+                                                    alt="logo-footer.png" border="0" /></a>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="footer table-600" bgcolor="#f2f1f6" cellpadding="0" cellspacing="0" width="600"
+                    align="center">
+                    <tr>
+                        <td height="30"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="footer-td table-550" cellpadding="0" cellspacing="0" width="550"
+                                    align="center">
+                                    <tr>
+                                        <td align="right">
+                                            <a href="https://radikal.host/i/cHyede" rel="noopener noreferrer"><img
+                                                    width="24" height="24"
+                                                    src="https://e.radikal.host/2024/02/16/vk.png" alt="vk.png"
+                                                    border="0" /></a>
+                                        </td>
+                                        <td align="left">
+                                            <a href="https://radikal.host/i/cHytaU" rel="noopener noreferrer"><img
+                                                    width="24" height="24"
+                                                    src="https://e.radikal.host/2024/02/16/tg.png" alt="tg.png"
+                                                    border="0" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <a rel="noopener noreferrer" href="https://msk.mrtexpert.ru/" target="_blank">
+                                <table class="footer-td table-550" cellpadding="0" cellspacing="0" width="550"
+                                    align="center">
+                                    <tr>
+                                        <td align="center" style="font-family: Arial, Helvetica, sans-serif;">
+                                            <p>Подпишитесь на нас</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="15"></td>
+                                    </tr>
+                                    <tr>
+
+                                        <td align="center" style="font-family: Arial, Helvetica, sans-serif;">
+                                            <a href="https://msk.mrtexpert.ru/">https://msk.mrtexpert.ru/</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="35"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="font-family: Arial, Helvetica, sans-serif;">
+                                            <h3>
+                                                ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
+                                            </h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="40"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
